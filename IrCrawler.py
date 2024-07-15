@@ -34,7 +34,7 @@ class IrCrawler():
         for idx in range(1,len(actualList)) :
             changeList.append(actualList[idx]-actualList[idx-1])
 
-        df = pd.DataFrame({'Timestamp' : timestampList,'실제' : actualList, '예상' : forecastList, '변동' : changeList, 'Actual State' : actualStateList})
+        df = pd.DataFrame({'date' : timestampList,'실제' : actualList, '예상' : forecastList, '변동' : changeList, 'Actual State' : actualStateList})
 
         df.to_csv("Feds 기준금리 변동.csv", encoding ='utf-8', index=False)
 

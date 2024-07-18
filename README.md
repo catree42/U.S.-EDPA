@@ -11,6 +11,10 @@
 </p>
 
 ### Structure
+![image](https://github.com/user-attachments/assets/ec16f079-b213-4996-b457-21df0cfcd42f)
+<p>
+    
+</p>
 
 
 ## Getting Started
@@ -21,7 +25,9 @@
 * ex. Windows 10
 
 ### Installing
-
+<p>
+    
+</p>
 * How/where to download your program
 * Any modifications needed to be made to files/folders
 

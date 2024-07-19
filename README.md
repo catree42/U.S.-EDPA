@@ -73,7 +73,7 @@
  ![금리-금](https://github.com/user-attachments/assets/33e4c2b6-ce15-4952-bb1e-56c752099c9e)  
 
     
- ## 추후 계획 
+ ## 향후 발전 계획 
  다가오는 9월 미국의 금리를 결정하는 연방준비기금, Feds의 금리인하는 거의 확정적인 상태다. 그래서 Regression Machine Leaning 모델에 위 경제지표 데이터들을 학습해 금리를 0.25bp, 0.5bp 등으로 내렸을 때 어떠한 변동이 올 지 예측하는 프로그램을 만들고 싶다. 
  
  ## Getting Started
@@ -140,16 +140,10 @@ command to run if program contains helper info
 |담당|내용|Contact|    
 |:--:|--|--|
 |Giuk|기획, Feds·CPi· Trends Crawler, Data Visualiztion|catree42@gmail.com|
-|김창회|게시글 조회수 올리기 기능<br>게시글 등록<br>Socket을 활용한 채팅 기능<br>DB 설계 및 구축||
-|이지원<br>(프론트엔드)|SPX Crawler||
-|김현승<br>(백엔드 및 프론트엔드)|T-bill Crawler||
-|송요섭<br>(백엔드 및 프론트엔드)|Gold Cralwer||
-|정현두<br>(백엔드 및 프론트엔드)|Bitcoin Crawler||
-
-
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+|김창회<br>)|SPX Crawler||
+|김현승<br>|T-bill Crawler|unchaincom@naver.com|
+|송요섭<br>|Gold Cralwer||
+|정현두<br>|Bitcoin Crawler|jhd6290@gmail.com|
 
 <!--
 ## Version History

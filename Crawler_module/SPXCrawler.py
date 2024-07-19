@@ -20,7 +20,7 @@ class SPXCrawler():
 
         soup = BeautifulSoup(resp.content, 'lxml')
 
-        ex = soup.select('tbody tr.svelte-ewueuo')
+        ex = soup.select('tbody tr.yf-ewueuo')
         result=[]
 
 

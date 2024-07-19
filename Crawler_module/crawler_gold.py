@@ -23,13 +23,13 @@ class Gold_Crawler():
         resp = requests.get(self.__url, headers=self.__headers)
         soup = BeautifulSoup(resp.content, 'lxml')
 
-        date_tags = soup.select('td.svelte-ewueuo')[::7]
-        open_tags = soup.select('td.svelte-ewueuo')[1::7]
-        high_tags = soup.select('td.svelte-ewueuo')[2::7]
-        low_tags = soup.select('td.svelte-ewueuo')[3::7]
-        close_tags = soup.select('td.svelte-ewueuo')[4::7]
-        adj_tags = soup.select('td.svelte-ewueuo')[5::7]
-        vol_tags = soup.select('td.svelte-ewueuo')[6::7]
+        date_tags = soup.select('td.yf-ewueuo')[::7]
+        open_tags = soup.select('td.yf-ewueuo')[1::7]
+        high_tags = soup.select('td.yf-ewueuo')[2::7]
+        low_tags = soup.select('td.yf-ewueuo')[3::7]
+        close_tags = soup.select('td.yf-ewueuo')[4::7]
+        adj_tags = soup.select('td.yf-ewueuo')[5::7]
+        vol_tags = soup.select('td.yf-ewueuo')[6::7]
 
         dates, opens, highs,lows, closes, adjs, vols = [], [], [], [], [], [], []
         for date_tag, open_tag, high_tag, low_tag, close_tag, adj_tag, vol_tag in zip(date_tags, open_tags, high_tags, low_tags, close_tags, adj_tags, vol_tags):
@@ -41,9 +41,9 @@ class Gold_Crawler():
             adjs.append(adj_tag.text)
             vols.append(vol_tag.text)
 
-        data = pd.DataFrame({'date':dates,'Open':opens,'High':highs,'Low':lows,'Close':closes,'Adj Close':adjs,'Volume':vols})
+        data = pd.DataFrame({'Date':dates,'Open':opens,'High':highs,'Low':lows,'Close':closes,'Adj Close':adjs,'Volume':vols})
         data.replace('-', np.nan, inplace=True)
-        data['date'] = pd.to_datetime(data.date, format='%b %d, %Y')
+        data['Date'] = pd.to_datetime(data.Date, format='%b %d, %Y')
         columns_to_convert = ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']
         for column in columns_to_convert:
             data[column] = data[column].str.replace(',', '').astype('float')
@@ -51,3 +51,15 @@ class Gold_Crawler():
 
         return data
 
+# Gold_Crawler 객체 생성
+crawler = Gold_Crawler()
+
+# 데이터 크롤링 및 데이터프레임 반환
+gold_data = crawler.crawl()
+
+# 반환된 데이터프레임 사용 예시
+print(gold_data)
+
+gold_data.info()
+
+gold_data

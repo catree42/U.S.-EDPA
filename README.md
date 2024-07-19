@@ -106,10 +106,10 @@
 
 ### Executing program
 <ol>
-    <li>Go to this url to execute the main.ipynp file of this project :  
-    <a href src="https://colab.research.google.com/github/catree42/U.S.EDAP/blob/main/main.ipynb">
-        https://colab.research.google.com/github/catree42/U.S.EDAP/blob/main/main.ipynb 
-    </a>
+    <li>Please just copy this url and paste on the website to execute the program. I found a problem to use this link below : (  
+        <a href src="https://colab.research.google.com/github/catree42/U.S.EDAP/blob/main/main.ipynb">
+            https://colab.research.google.com/github/catree42/U.S.EDAP/blob/main/main.ipynb    
+        </a>
     </li>
     <li>
         Uncomment codes for cloning github, cd(chage directory), import TrendsCrawler.  
@@ -157,7 +157,6 @@ command to run if program contains helper info
 ## License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
 
 ## Acknowledgments
 

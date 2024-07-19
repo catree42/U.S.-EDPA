@@ -106,7 +106,7 @@
 
 ### Executing program
 <ol>
-    <li>Please just copy this url and paste on the website to execute the program. I found a problem to use this link below : (  
+    <li>Please just copy this url and paste on the website to execute the program. I found a problem to use this link below : (    
         <a href src="https://colab.research.google.com/github/catree42/U.S.EDAP/blob/main/main.ipynb">
             https://colab.research.google.com/github/catree42/U.S.EDAP/blob/main/main.ipynb    
         </a>

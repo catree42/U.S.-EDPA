@@ -113,7 +113,7 @@
     </li>
     <li>
         Uncomment codes for cloning github, cd(chage directory), import TrendsCrawler.  
-        I comment out these codes to execute the program on Pycharm but they need to be uncomment to be execute on Google colab.
+        I comment out these codes to execute the program on Pycharm but they need to be uncomment to be executed on Google colab.
     </li>
     <li>I hope you have fun with our program : )</li>
 </ol>

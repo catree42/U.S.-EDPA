@@ -5,34 +5,67 @@
 ## Description
 
 ### 개요
-<p>  
-    현재까지 기록된 미국의 여러 경제지표 데이터를 크롤링하고 다중 차트로 시각화한다. 또한 Google Trends에서 특정 연도에 해당하는 상위 검색어를 추출해 워드 클라우드로 시각화한다.  
-    이러한 기능들을 활용해 경제지표 간의 상호 연관성과 경제 위기가 발생했을 때 경제지표가 어떻게 반응하는지 분석했다.
-</p>
+<ul> 
+    <li>현재까지 기록된 미국의 여러 경제지표 데이터를 크롤링하고 다중 차트로 시각화한다.</li>
+    <li>또한 Google Trends에서 특정 연도에 해당하는 상위 검색어를 추출해 워드 클라우드로 시각화한다.</li>
+    <li>이러한 기능들을 활용해 경제지표 간의 상호 연관성과 경제 위기가 발생했을 때 경제지표가 어떻게 반응하는지 분석했다.</li>
+</ul>
 
 ### Structure
-![image](https://github.com/user-attachments/assets/ec16f079-b213-4996-b457-21df0cfcd42f)
-<p>
+![image](https://github.com/user-attachments/assets/ec16f079-b213-4996-b457-21df0cfcd42f)  
+
+  
+<b>Crawler</b>
     
-</p>
-
-
-## Getting Started
+![image](https://github.com/user-attachments/assets/57980013-9ead-45a0-820b-498250223845)
+<ul>
+    <li>Feds 결정금리, CPI 물가지수, 13 week T-bill 채권 수익률, S&P500 주가지수, Bitcoin, Gold 시세 총 6가지 경제지표를 데이터가 존재하는 가장 긴 기간만큼 크롤링하는 클래스를 작성했고 각각의 모듈로 만들었다.</li>
+    <li>각 클래스는 crawl() 메서드를 가지며 해당 메서드는 각자가 가진 url을 크롤링해 dataFrame에 저장하고 csv파일을 생성한다. 크롤링한 데이터가 저장된 dataFrame을 반환한다.</li>
+    <li>금리, 물가지수는 Investing.com 에서 Json파일을 크롤링했고, 이 외에 경제지표는 yahoo finance 웹사이트에서 Beatiful Soup 라이브러리를 이용해 크롤링하였다.</li>
+</ul>
+    
+<b>Trends Crawler</b>
+<ul>
+    <li>Feds 결정금리가 급락했을 때 어떠한 사회적·경제적 이슈가 있었는지 보기위해 Google Trends 검색어를 가져오는 클래스이자 모듈이다.</li>
+    <li>crawl() 메서드를 가지며 파라미터로 연도(year)를 받아 Google Trends에서 입력받은 연도의 상위 검색어 10개를 가져와 dataFrame을 만든다.</li>
+    <li>검색어 10개를 워드클라우드 이미지로 만들어 시각화한다.</li>
+</ul>
+  
+ <b>Main</b>
+ <ul>
+     <li>Jupyter notebook 형식의 파일로 Google colab에서 실행해야한다. clone github, install requirement, import Crawler module 하는 코드들이 선행된다. </li>
+     <li>각 크롤러의 crawl 메서드를 실행해 각 경제지표들의 dataFrame을 만들고 비교 분석을 원하는 경제지표들을 차트로 시각화한다.</li>
+     <li>차트로 시각화 하는 함수는 create_Chart() 함수로 dataFrames, titles를 담은 dictionary를 키워드인자로 받는다. 키워드 인자로 경제지표들의 데이터프레임을 받아 최소 1개, 최대 4개의 경제지표를 한 차트에 시각화가 가능하게 했다. </li>
+     <li>차트 시각화는 plotly 라이브러리를 이용했다. plotly가  matplot 라이브러리보다 디자인이 예쁘고 cursor hover 시 데이터 정보를 볼 수 있어서 UX가 더 좋다고 느꼈다. </li>
+ </ul>
+ 
+ ## Getting Started
 
 ### Dependencies
-
+<ol>
+    <li>Execution Environment : Google Colab</li>
+     <li>Language : Python</li>
+    <li>Library
+        <ol>
+            <li>Crawling Data : Beautiful Soup, pytrends</li>
+            <li>Data Visualizing : plotly, tqdm.notebook, wordcloud, cv2, google.colab.patches</li>
+            <li>Google Trends : pytrends</li>
+        </ol>
+    </li>   
+</ol>
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
 * ex. Windows 10
 
 ### Installing
 <p>
-    
 </p>
 * How/where to download your program
 * Any modifications needed to be made to files/folders
 
 ### Executing program
-
+<p>
+    Clone this repository and excute main.ipynb on Google Colab to execute the program. I hope you have fun with my program : )
+</p>
 * How to run the program
 * Step-by-step bullets
 ```
@@ -48,6 +81,7 @@ command to run if program contains helper info
 
 ## Authors
 
+Giuk : 
 Contributors names and contact info
 
 ex. Dominique Pizzie  

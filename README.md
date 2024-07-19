@@ -1,4 +1,4 @@
-# U.S EDPA
+# U.S EDAP
 
 <p>United States Economy Data Analysis Program</p>
 

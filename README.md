@@ -58,7 +58,7 @@
 
 ### Installing
 <p>
-    I already wrote codes in main.ipynp to install packages and clone this repository. So you can just go next section : )
+    I already wrote codes in main.ipynp to install packages on requirements.txt and clone this repository. So you can just go next section : )
 </p>
 * How/where to download your program
 * Any modifications needed to be made to files/folders

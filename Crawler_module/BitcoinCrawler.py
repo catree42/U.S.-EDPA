@@ -1,9 +1,8 @@
 
 import pandas as pd
 from tqdm.notebook import tqdm
-
-import requests # 웹 상의 데이터를 가져올 때
-from bs4 import BeautifulSoup # 가져온 데이터에서 필요한 정보를 골라낼(파싱할) 때
+import requests
+from bs4 import BeautifulSoup
 
 
 class BitcoinCrawler():
@@ -28,7 +27,7 @@ class BitcoinCrawler():
         soup = BeautifulSoup(resp.content, 'lxml')
 
         # 히스토리 데이터 html 위치 반환
-        cells = soup.select("td.svelte-ewueuo")
+        cells = soup.select("td.yf-ewueuo")
 
         # 데이터 추출
         for i in tqdm(range(0, len(cells), 7)):
@@ -64,4 +63,12 @@ class BitcoinCrawler():
         csv_file = 'bitcoin_monthly.csv'
         self.data.to_csv(csv_file, encoding='utf-8', index=False)
 
-        return csv_file
+        return self.data
+
+
+# Module Test
+if __name__ == "__main__":
+    crawler = BitcoinCrawler()
+    bitcoin_data, csv_file = crawler.crawl()
+    print(f"CSV 파일 생성: {csv_file}")
+    print(bitcoin_data.info())

@@ -1,3 +1,4 @@
+
 import requests
 from bs4 import BeautifulSoup
 import datetime
@@ -22,7 +23,7 @@ class BillCrawler():
         resp
 
         soup = BeautifulSoup(resp.content, 'lxml')
-        tnx = soup.select('div.table-container.svelte-ewueuo  table  tbody  tr')
+        tnx = soup.select('#nimbus-app > section > section > section > article > div.container > div.table-container.yf-ewueuo > table > tbody tr')
 
         data={'date':[],'Open':[],'High':[],'Low':[],'Close':[],'Adj_Close':[],'Volume':[]}
 

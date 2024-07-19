@@ -18,6 +18,7 @@
 #### Crawler
     
 ![image](https://github.com/user-attachments/assets/57980013-9ead-45a0-820b-498250223845)
+![image](https://github.com/user-attachments/assets/d8c8a611-d431-4aca-8422-c5759e489884)
 <ul>
     <li>Feds 결정금리, CPI 물가지수, 13 week T-bill 채권 수익률, S&P500 주가지수, Bitcoin, Gold 시세 총 6가지 경제지표를 데이터가 존재하는 가장 긴 기간만큼 크롤링하는 클래스를 작성했고 각각의 모듈로 만들었다.</li>
     <li>각 클래스는 crawl() 메서드를 가지며 해당 메서드는 각자가 가진 url을 크롤링해 dataFrame에 저장하고 csv파일을 생성한다. 크롤링한 데이터가 저장된 dataFrame을 반환한다.</li>
@@ -25,6 +26,7 @@
 </ul>
     
 #### Trends Crawler
+![image](https://github.com/user-attachments/assets/d59b3618-8c58-40dc-a498-dbd031b93f56)
 <ul>
     <li>Feds 결정금리가 급락했을 때 어떠한 사회적·경제적 이슈가 있었는지 보기위해 Google Trends 검색어를 가져오는 클래스이자 모듈이다.</li>
     <li>crawl() 메서드를 가지며 파라미터로 연도(year)를 받아 Google Trends에서 입력받은 연도의 상위 검색어 10개를 가져와 dataFrame을 만든다.</li>
@@ -32,6 +34,8 @@
 </ul>
   
  #### Main
+
+ ![image](https://github.com/user-attachments/assets/656c7f38-34d3-4ad9-8322-4394d11c479f)
  <ul>
      <li>Jupyter notebook 형식의 파일로 Google colab에서 실행해야한다. clone github, install requirement, import Crawler module 하는 코드들이 선행된다. </li>
      <li>각 크롤러의 crawl 메서드를 실행해 각 경제지표들의 dataFrame을 만들고 비교 분석을 원하는 경제지표들을 차트로 시각화한다.</li>

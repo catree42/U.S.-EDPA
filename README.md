@@ -53,41 +53,64 @@
         </ol>
     </li>   
 </ol>
+<!--
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
 * ex. Windows 10
+-->
 
 ### Installing
 <p>
     I already wrote codes in main.ipynp to install packages on requirements.txt and clone this repository. So you can just go next section : )
 </p>
+<!--
 * How/where to download your program
 * Any modifications needed to be made to files/folders
+-->
 
 ### Executing program
-<p>
-    Clone this repository and excute main.ipynb on Google Colab to execute the program. I hope you have fun with my program : )
-</p>
+<ol>
+    <li>Go to this url to execute the main.ipynp file of this project :  
+    <a href src="https://colab.research.google.com/github/catree42/U.S.EDAP/blob/main/main.ipynb">
+        https://colab.research.google.com/github/catree42/U.S.EDAP/blob/main/main.ipynb 
+    </a>
+    </li>
+    <li>
+        Uncomment codes for cloning github, cd(chage directory), import TrendsCrawler.  
+        I comment out these codes to execute the program on Pycharm but they need to be uncomment to be execute on Google colab.
+    </li>
+    <li>I hope you have fun with our program : )</li>
+</ol>
+
+<!--
 * How to run the program
 * Step-by-step bullets
 ```
 code blocks for commands
 ```
+-->
 
+<!--
 ## Help
 
 Any advise for common problems or issues.
 ```
 command to run if program contains helper info
 ```
+-->
 
 ## Authors
 
 Giuk : 
 Contributors names and contact info
+김창회 :
+김현승 :
+송요섭 :
+
 
 ex. Dominique Pizzie  
 ex. [@DomPizzie](https://twitter.com/dompizzie)
 
+<!--
 ## Version History
 
 * 0.2
@@ -99,6 +122,7 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
 ## License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+-->
 
 ## Acknowledgments
 

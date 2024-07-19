@@ -38,6 +38,9 @@
      <li>차트로 시각화 하는 함수는 create_Chart() 함수로 dataFrames, titles를 담은 dictionary를 키워드인자로 받는다. 키워드 인자로 경제지표들의 데이터프레임을 받아 최소 1개, 최대 4개의 경제지표를 한 차트에 시각화가 가능하게 했다. </li>
      <li>차트 시각화는 plotly 라이브러리를 이용했다. plotly가  matplot 라이브러리보다 디자인이 예쁘고 cursor hover 시 데이터 정보를 볼 수 있어서 UX가 더 좋다고 느꼈다. </li>
  </ul>
+
+ ## 실행 및 분석 결과
+ 
  
  ## Getting Started
 
@@ -100,14 +103,14 @@ command to run if program contains helper info
 
 ## Authors
 
-|담당|내용|
-|:--:|--|
-|Giuk|기획, Feds·CPi· Trends Crawler, Data Visualiztion|
-|김창회|게시글 조회수 올리기 기능<br>게시글 등록<br>Socket을 활용한 채팅 기능<br>DB 설계 및 구축|
-|이지원<br>(프론트엔드)|SPX Crawler|
-|김현승<br>(백엔드 및 프론트엔드)|T-bill Crawler|
-|송요섭<br>(백엔드 및 프론트엔드)|Gold Cralwer|
-|정현두<br>(백엔드 및 프론트엔드)|Bitcoin Crawler|
+|담당|내용|Contact|    
+|:--:|--|--|
+|Giuk|기획, Feds·CPi· Trends Crawler, Data Visualiztion|catree42@gmail.com|
+|김창회|게시글 조회수 올리기 기능<br>게시글 등록<br>Socket을 활용한 채팅 기능<br>DB 설계 및 구축||
+|이지원<br>(프론트엔드)|SPX Crawler||
+|김현승<br>(백엔드 및 프론트엔드)|T-bill Crawler||
+|송요섭<br>(백엔드 및 프론트엔드)|Gold Cralwer||
+|정현두<br>(백엔드 및 프론트엔드)|Bitcoin Crawler||
 
 
 

@@ -100,11 +100,15 @@ command to run if program contains helper info
 
 ## Authors
 
-Giuk : 
-Contributors names and contact info
-김창회 :
-김현승 :
-송요섭 :
+|담당|내용|
+|:--:|--|
+|Giuk|기획, Feds·CPi· Trends Crawler, Data Visualiztion|
+|김창회|게시글 조회수 올리기 기능<br>게시글 등록<br>Socket을 활용한 채팅 기능<br>DB 설계 및 구축|
+|이지원<br>(프론트엔드)|SPX Crawler|
+|김현승<br>(백엔드 및 프론트엔드)|T-bill Crawler|
+|송요섭<br>(백엔드 및 프론트엔드)|Gold Cralwer|
+|정현두<br>(백엔드 및 프론트엔드)|Bitcoin Crawler|
+
 
 
 ex. Dominique Pizzie  

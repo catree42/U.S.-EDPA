@@ -15,7 +15,7 @@
 ![image](https://github.com/user-attachments/assets/ec16f079-b213-4996-b457-21df0cfcd42f)  
 
   
-<b>Crawler</b>
+#### Crawler
     
 ![image](https://github.com/user-attachments/assets/57980013-9ead-45a0-820b-498250223845)
 <ul>
@@ -24,14 +24,14 @@
     <li>금리, 물가지수는 Investing.com 에서 Json파일을 크롤링했고, 이 외에 경제지표는 yahoo finance 웹사이트에서 Beatiful Soup 라이브러리를 이용해 크롤링하였다.</li>
 </ul>
     
-<b>Trends Crawler</b>
+#### Trends Crawler
 <ul>
     <li>Feds 결정금리가 급락했을 때 어떠한 사회적·경제적 이슈가 있었는지 보기위해 Google Trends 검색어를 가져오는 클래스이자 모듈이다.</li>
     <li>crawl() 메서드를 가지며 파라미터로 연도(year)를 받아 Google Trends에서 입력받은 연도의 상위 검색어 10개를 가져와 dataFrame을 만든다.</li>
     <li>검색어 10개를 워드클라우드 이미지로 만들어 시각화한다.</li>
 </ul>
   
- <b>Main</b>
+ #### Main
  <ul>
      <li>Jupyter notebook 형식의 파일로 Google colab에서 실행해야한다. clone github, install requirement, import Crawler module 하는 코드들이 선행된다. </li>
      <li>각 크롤러의 crawl 메서드를 실행해 각 경제지표들의 dataFrame을 만들고 비교 분석을 원하는 경제지표들을 차트로 시각화한다.</li>

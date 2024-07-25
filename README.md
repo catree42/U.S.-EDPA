@@ -143,7 +143,7 @@ command to run if program contains helper info
 |Giuk|기획, Feds·CPi· Trends Crawler, Data Visualiztion|catree42@gmail.com|
 |김창회<br>|SPX Crawler|cdkghl852@naver.com|
 |김현승<br>|T-bill Crawler|unchaincom@naver.com|
-|송요섭<br>|Gold Cralwer||
+|송요섭<br>|Gold Cralwer|sys1554@naver.com|
 |정현두<br>|Bitcoin Crawler|jhd6290@gmail.com|
 
 <!--
